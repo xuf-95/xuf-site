@@ -1,7 +1,12 @@
 # Hugo and Blowfish
-content/
-resources/
-exampleSite/resources/
+resources/_gen/
+resources/_gen/images/
+resources/_gen/assets/
+public/
+.hugo_build.lock
+
+# 移除了 content/ 和 resources/ 的完全忽略
+# content/ 和 resources/ 目录中的源文件应该被版本控制
 
 # Binaries for programs and plugins
 *.exe
@@ -21,7 +26,6 @@ exampleSite/resources/
 
 #others
 node_modules
-.hugo_build.lock
 
 # OS generated files
 .DS_Store
